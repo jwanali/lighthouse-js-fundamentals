@@ -15,5 +15,6 @@ function chooseStations (stations) {
     } 
   }
   console.log(stationsOrder);
+  return stationsOrder
 };
 chooseStations(stations);
