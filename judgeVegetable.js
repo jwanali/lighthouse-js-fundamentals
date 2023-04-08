@@ -1,19 +1,16 @@
+//const judgeVegetable = (vegetables, metric) => {
+ // return   vegetables.reduce( (winner, contestant) =>
+ //                         contestant[metric] > winner[metric] ? contestant : winner).submitter
+//}
 const judgeVegetable = function (vegetables, metric) {
   var winner = 0;
   var winnerName = '';
   for (let index = 0; index < vegetables.length; index++) {
-    console.log(metric)
-    console.log(vegetables[index])
-    if (vegetables[index].metric >= winner) {
-      console.log(6)
-      winner = vegetables[index].metric;
-      winnerName = vegetables[index].submitter;
-    } 
+   
 
 
 
-
-   /* if ( metric === 'redness') {
+   if ( metric === 'redness') {
       if (vegetables[index].redness >= winner) {
         winner = vegetables[index].redness;
         winnerName = vegetables[index].submitter;
@@ -23,7 +20,7 @@ const judgeVegetable = function (vegetables, metric) {
         winner = vegetables[index].plumpness;
         winnerName = vegetables[index].submitter;
       } 
-    }*/
+    }
     
   }
   return winnerName;
